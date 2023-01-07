@@ -29,4 +29,3 @@ declare module 'styled-components' {
     }
   }
 }
-s
