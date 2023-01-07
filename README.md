@@ -23,7 +23,7 @@ Esta é uma Landing Page que apresenta outro projeto meu chamado [Parsi](https:/
 ### _Mobile e Telas Menores_
 
 <h1 align="center">
-    <img src="./.github/mobile_screenshot.png" style="width: 60%">
+    <img src="./.github/mobile_screenshot.png" style="width: 40%">
 </h1>
 
 ## :wrench: **Tecnologias**
