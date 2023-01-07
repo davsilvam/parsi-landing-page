@@ -4,13 +4,39 @@ export const Container = styled.footer`
   width: 100%;
   display: flex;
   align-items: flex-start;
+
+  @media (max-width: 426px) {
+    & {
+      justify-content: center;
+    }
+  }
+
   justify-content: space-between;
   padding: 40px 120px;
+
+  @media (max-width: 1025px) {
+    & {
+      padding: 40px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    & {
+      padding: 40px 28px;
+    }
+  }
+
   margin-top: 240px;
   border-top: 1px solid rgb(73, 29, 149, 0.6);
 
   img {
     width: 104px;
+
+    @media (max-width: 426px) {
+      & {
+        display: none;
+      }
+    }
   }
 
   div {

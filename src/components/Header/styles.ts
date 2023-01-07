@@ -8,6 +8,18 @@ export const Container = styled.header`
   justify-content: space-between;
   padding: 40px 120px;
 
+  @media (max-width: 1025px) {
+    & {
+      padding: 40px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    & {
+      padding: 40px 28px;
+    }
+  }
+
   img {
     width: 48px;
   }

@@ -6,6 +6,13 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 24px;
   padding: 0 120px;
+
+  @media (max-width: 1025px) {
+    & {
+      padding: 0 40px;
+    }
+  }
+
   margin-top: 120px;
 
   h2 {
@@ -25,6 +32,15 @@ export const Container = styled.div`
   ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 769px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
     gap: 32px;
     margin: 24px 0;
 
@@ -34,9 +50,23 @@ export const Container = styled.div`
     }
 
     li {
+      width: 100%;
       cursor: pointer;
       grid-row: 1;
       max-width: 400px;
+
+      @media (max-width: 769px) {
+        & {
+          max-width: 300px;
+        }
+      }
+
+      @media (max-width: 426px) {
+        & {
+          max-width: 100%;
+        }
+      }
+
       border: 1px transparent;
       border-radius: 12px;
       padding: 2px;

@@ -7,7 +7,26 @@ export const Container = styled.section`
   align-items: center;
   gap: 24px;
   padding: 0 120px;
+
+  @media (max-width: 1025px) {
+    & {
+      padding: 0 40px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    & {
+      padding: 0 28px;
+    }
+  }
+
   margin-top: 120px;
+
+  @media (max-width: 426px) {
+    & {
+      margin-top: 56px;
+    }
+  }
 
   div {
     display: flex;
@@ -33,11 +52,40 @@ export const Container = styled.section`
 export const Functionality = styled.article`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+
+  @media (max-width: 1025px) {
+    &:nth-child(3) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: 769px) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
   justify-content: center;
   gap: 52px;
   padding: 56px 120px;
+
+  @media (max-width: 1025px) {
+    & {
+      padding: 56px 80px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    & {
+      padding: 56px 32px;
+      gap: 32px;
+    }
+  }
+
   background: radial-gradient(
     55.65% 220.76% at 21.91% 46.07%,
     rgb(73, 29, 149, 0.24) 0,
@@ -48,10 +96,25 @@ export const Functionality = styled.article`
 
   img {
     grid-row: 1;
+    width: 360px;
     height: 360px;
     border: 1px solid rgb(73, 29, 149, 0.24);
     box-shadow: rgba(12, 12, 12, 0.2) 0px 7px 29px 0px;
     border-radius: 12px;
+
+    @media (max-width: 769px) {
+      & {
+        width: 280px;
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 426px) {
+      & {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   > div {
@@ -76,6 +139,12 @@ export const Functionality = styled.article`
       max-width: 500px;
       color: ${({ theme }) => theme.colors.secondary[300]};
       line-height: 24px;
+
+      @media (max-width: 1025px) {
+        & {
+          text-align: justify;
+        }
+      }
     }
   }
 `

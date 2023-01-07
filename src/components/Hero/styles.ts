@@ -1,12 +1,39 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
+  width: 880px;
+
+  @media (max-width: 769px) {
+    & {
+      width: 100%;
+    }
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 120px;
+
+  @media (max-width: 1025px) {
+    & {
+      padding: 0 40px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    & {
+      padding: 0 28px;
+    }
+  }
+
   gap: 24px;
   margin-top: 84px;
-  width: 800px;
+
+  @media (max-width: 426px) {
+    & {
+      margin-top: 48px;
+    }
+  }
 
   h1 {
     font-weight: 700;
@@ -20,7 +47,7 @@ export const Container = styled.section`
   }
 
   p {
-    width: 800px;
+    max-width: 800px;
     text-align: center;
     color: ${({ theme }) => theme.colors.secondary[300]};
     font-weight: 500;
@@ -32,6 +59,20 @@ export const Container = styled.section`
     justify-content: center;
     gap: 32px;
     margin-top: 24px;
+
+    @media (max-width: 426px) {
+      & {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  img {
+    @media (max-width: 426px) {
+      & {
+        order: -1;
+      }
+    }
   }
 `
 
