@@ -1,17 +1,20 @@
 import { ThemeProvider } from 'styled-components'
-import Benefits from './components/Benefits'
-import Closing from './components/Closing'
-import Footer from './components/Footer'
-import Functionalities from './components/Functionalities'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import { GlobalStyles } from './styles/global-styles'
+import {
+  Benefits,
+  Closing,
+  Footer,
+  Functionalities,
+  Header,
+  Hero,
+} from './components'
+import { GlobalStyles } from './styles/global'
 import { DarkTheme } from './styles/themes/theme'
 
-function App() {
+export function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
       <GlobalStyles />
+
       <Header />
       <Hero />
       <Benefits />
@@ -21,5 +24,3 @@ function App() {
     </ThemeProvider>
   )
 }
-
-export default App

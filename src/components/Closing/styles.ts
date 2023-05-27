@@ -14,7 +14,7 @@ export const Container = styled.section`
       margin-bottom: 24px;
       transition: 0.15s ease-in-out;
 
-      :hover {
+      &:hover {
         transform: scale(1.2);
       }
     }
@@ -25,7 +25,7 @@ export const Container = styled.section`
     margin-bottom: 4px;
   }
 
-  h4 {
+  h3 {
     font-size: 14px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.secondary[300]};

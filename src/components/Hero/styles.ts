@@ -48,6 +48,7 @@ export const Container = styled.section`
 
   p {
     max-width: 800px;
+    line-height: 28px;
     text-align: center;
     color: ${({ theme }) => theme.colors.secondary[300]};
     font-weight: 500;
@@ -82,6 +83,7 @@ export const RepoButton = styled.a`
   justify-content: center;
   gap: 8px;
   padding: 12px 28px;
+  height: 48px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
@@ -90,8 +92,18 @@ export const RepoButton = styled.a`
   background-color: transparent;
   transition: 0.3s ease-in-out;
 
+  svg {
+    fill: ${({ theme }) => theme.colors.secondary[100]};
+    transition: 0.3s ease-in-out;
+    width: 24px;
+  }
+
   &:hover {
     color: ${({ theme }) => theme.colors.secondary[900]};
     background-color: ${({ theme }) => theme.colors.secondary[100]};
+
+    svg {
+      fill: ${({ theme }) => theme.colors.secondary[900]};
+    }
   }
 `

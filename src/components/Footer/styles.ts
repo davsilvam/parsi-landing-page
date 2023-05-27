@@ -43,8 +43,8 @@ export const Container = styled.footer`
     display: flex;
     gap: 48px;
 
-    ul {
-      h3 {
+    nav {
+      strong {
         font-size: 20px;
       }
 
@@ -52,13 +52,13 @@ export const Container = styled.footer`
       flex-direction: column;
       gap: 4px;
 
-      li {
+      a {
         font-size: 14px;
         color: ${({ theme }) => theme.colors.secondary[300]};
         opacity: 0.65;
         transition: 0.15s ease-in-out;
 
-        :hover {
+        &:hover {
           opacity: 1;
         }
       }

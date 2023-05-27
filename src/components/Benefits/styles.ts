@@ -116,10 +116,14 @@ export const Container = styled.div`
           background-color: ${({ theme }) => theme.colors.primary[500]};
         }
 
+        & > strong {
+          font-size: 18px;
+        }
+
         p {
           font-size: 14px;
           font-weight: 400;
-          line-height: 20px;
+          line-height: 22px;
         }
       }
     }

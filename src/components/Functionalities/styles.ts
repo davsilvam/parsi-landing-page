@@ -33,15 +33,12 @@ export const Container = styled.section`
     flex-direction: column;
     align-items: center;
 
-    h4 {
-      font-size: 14px;
-      color: ${({ theme }) => theme.colors.primary[400]};
-    }
-
     h2 {
-      font-size: 32px;
+      font-size: 24px;
+      text-align: center;
 
       span {
+        font-size: 32px;
         font-weight: 700;
         color: ${({ theme }) => theme.colors.primary[500]};
       }

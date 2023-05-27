@@ -1,12 +1,12 @@
-import React from 'react'
-import { Container, Backdrop } from './styles'
+import { Fragment } from 'react'
 import logo from '../../assets/parsi_logo.png'
-import ButtonCTA from '../ButtonCTA'
+import { ButtonCTA } from '../'
+import { Backdrop, Container } from './styles'
 
-const Header: React.FC = () => {
+export function Header() {
   return (
-    <>
-      <Backdrop></Backdrop>
+    <Fragment>
+      <Backdrop />
       <Container>
         <img
           src={logo}
@@ -14,8 +14,6 @@ const Header: React.FC = () => {
         />
         <ButtonCTA />
       </Container>
-    </>
+    </Fragment>
   )
 }
-
-export default Header

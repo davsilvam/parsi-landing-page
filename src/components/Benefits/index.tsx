@@ -1,18 +1,17 @@
-import React from 'react'
-import { Container } from './styles'
-import { IconContext } from 'react-icons'
 import {
-  HiOutlineChartPie,
-  HiOutlineSwatch,
-  HiOutlineCalendar,
-} from 'react-icons/hi2'
+  ChartPieIcon,
+  CalendarIcon,
+  SwatchIcon,
+} from '@heroicons/react/24/outline'
+import { Container } from './styles'
 
-const Benefits: React.FC = () => {
+export function Benefits() {
   return (
     <Container>
       <h2>
         Empenhada em ajudar <span>você</span> a poupar
       </h2>
+
       <p>
         A Parsi não mede esforços ao tentar informar seus usuários da sua atual
         situação. <br /> Para isso, a aplicação dispõe de vários formas de
@@ -23,12 +22,10 @@ const Benefits: React.FC = () => {
         <li>
           <div>
             <div>
-              <IconContext.Provider
-                value={{ size: '24px', className: 'global-class-name' }}>
-                <HiOutlineChartPie />
-              </IconContext.Provider>
+              <ChartPieIcon width={24} />
             </div>
-            <h3>Cores vibrantes</h3>
+
+            <strong>Cores vibrantes</strong>
             <p>
               A aplicação conta com cores específicas e muito chamativas para os
               seus dois tipos de transação (ganhos e despesas). Essa temática se
@@ -40,12 +37,10 @@ const Benefits: React.FC = () => {
         <li>
           <div>
             <div>
-              <IconContext.Provider
-                value={{ size: '24px', className: 'global-class-name' }}>
-                <HiOutlineSwatch />
-              </IconContext.Provider>
+              <SwatchIcon width={24} />
             </div>
-            <h3>Gráficos estatísticos</h3>
+
+            <strong>Gráficos estatísticos</strong>
             <p>
               O Dashboard e a seção Transações apresentam gráficos que são
               atualizados em tempo real conforme se registram as transações.
@@ -57,12 +52,10 @@ const Benefits: React.FC = () => {
         <li>
           <div>
             <div>
-              <IconContext.Provider
-                value={{ size: '24px', className: 'global-class-name' }}>
-                <HiOutlineCalendar />
-              </IconContext.Provider>
+              <CalendarIcon width={24} />
             </div>
-            <h3>Orçamentos mensais</h3>
+
+            <strong>Orçamentos mensais</strong>
             <p>
               Os orçamentos vieram para aqueles que precisam de um pequeno
               empurrão para limitar seus gastos. Crie um orçamento e defina um
@@ -75,5 +68,3 @@ const Benefits: React.FC = () => {
     </Container>
   )
 }
-
-export default Benefits

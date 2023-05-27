@@ -1,0 +1,7 @@
+export * from './Benefits'
+export * from './ButtonCTA'
+export * from './Closing'
+export * from './Footer'
+export * from './Functionalities'
+export * from './Header'
+export * from './Hero'
