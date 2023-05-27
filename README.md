@@ -6,7 +6,7 @@
     <img src="./.github/banner.png" style="width: 100%">
 </h1>
 
-Esta é uma Landing Page que apresenta outro projeto meu chamado [Parsi](https://parsi-app.vercel.app). O intuito do projeto era praticar a criação de Landing Pages, além de praticar a sintaxe do React, Styled Components e seu ecossistema.
+Esta é uma Landing Page que apresenta outro projeto meu chamado Parsi. O intuito do projeto era praticar a criação de Landing Pages, além de praticar a sintaxe do React, Styled Components e seu ecossistema.
 
 <p align="center">
    <a href="https://parsi-landing-page.vercel.app">Veja o projeto completo aqui.</a>
